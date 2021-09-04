@@ -16,7 +16,7 @@ const uniSchema = new mongoose.Schema({
     email: String
 })
 const uniModel = mongoose.model('test', uniSchema);
-mongoose.connect(`${process.env.MONGO_LINK}`, {
+mongoose.connect(`${process.env.mongo_link}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
