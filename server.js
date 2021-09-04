@@ -15,8 +15,8 @@ const uniSchema = new mongoose.Schema({
     web_pages: String,
     email: String
 })
-const uniModel = mongoose.model('myunvirsty', uniSchema);
-mongoose.connect('mongodb://Dima:12345@dimadatabase-shard-00-00.hlxtc.mongodb.net:27017,dimadatabase-shard-00-01.hlxtc.mongodb.net:27017,dimadatabase-shard-00-02.hlxtc.mongodb.net:27017/bookDatabase?ssl=true&replicaSet=atlas-x877vu-shard-0&authSource=admin&retryWrites=true&w=majority', {
+const uniModel = mongoose.model('test', uniSchema);
+mongoose.connect(`${process.env.MONGO_LINK}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
