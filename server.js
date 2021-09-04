@@ -16,7 +16,7 @@ const uniSchema = new mongoose.Schema({
     email: String
 })
 const uniModel = mongoose.model('myunvirsty', uniSchema);
-mongoose.connect(`${process.env.MONGO_LINK}`, {
+mongoose.connect('mongodb://Dima-Zeklam:12345@cluster2-shard-00-00.ou06q.mongodb.net:27017,cluster2-shard-00-01.ou06q.mongodb.net:27017,cluster2-shard-00-02.ou06q.mongodb.net:27017/universityapp?ssl=true&replicaSet=atlas-ed72im-shard-0&authSource=admin&retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
