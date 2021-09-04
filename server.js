@@ -16,7 +16,7 @@ const uniSchema = new mongoose.Schema({
     email: String
 })
 const uniModel = mongoose.model('myunvirsty', uniSchema);
-mongoose.connect('mongodb://Dima-Zeklam:54321@cluster0-shard-00-00.gypc5.mongodb.net:27017,cluster0-shard-00-01.gypc5.mongodb.net:27017,cluster0-shard-00-02.gypc5.mongodb.net:27017/test?ssl=true&replicaSet=atlas-aeatd4-shard-0&authSource=admin&retryWrites=true&w=majority', {
+mongoose.connect('mongodb://Dima:12345@dimadatabase-shard-00-00.hlxtc.mongodb.net:27017,dimadatabase-shard-00-01.hlxtc.mongodb.net:27017,dimadatabase-shard-00-02.hlxtc.mongodb.net:27017/bookDatabase?ssl=true&replicaSet=atlas-x877vu-shard-0&authSource=admin&retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
