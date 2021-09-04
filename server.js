@@ -7,7 +7,7 @@ server.use(cors());
 server.use(express.json());
 require('dotenv').config();
 const mongoose = require('mongoose');
-const PORT = 3001;
+// const PORT = 3001;
 let inMemory = {};
 const uniSchema = new mongoose.Schema({
     country: String,
@@ -181,6 +181,6 @@ function updateFav(req,res){
         }
     })
 }
-server.listen(PORT, () => {
-    console.log('All good', PORT);
+server.listen(process.env.PORT, () => {
+    console.log('All good', process.env.PORT);
 })
